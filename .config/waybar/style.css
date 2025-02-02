@@ -1,0 +1,70 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: JetBrainsMonoNL Nerd Font;
+  font-size: 14px;
+  font-weight: 600;
+  min-height: 0;
+}
+
+window#waybar {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.modules-left {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.modules-right {
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+#workspaces button {
+  margin-right: 5px;
+  color: #ffffff;
+  background-color: #1e1e2e;
+  border-radius: 2px;
+}
+
+#workspaces button.active {
+  color: #89b4fa;
+}
+
+#workspaces button:hover {
+  border: none;
+  color: #ffffff;
+  background: #89b4fa;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#pulseaudio,
+#clock,
+#battery,
+#backlight,
+#language {
+  color: #f38ba8;
+  background-color: #1e1e2e;
+  margin-left: 5px;
+  padding: 0px 7px;
+  border-radius: 2px;
+}
+
+#tray {
+  margin-left: 5px;
+  padding: 0px 7px;
+  background-color: #1e1e2e;
+  border-radius: 2px;
+}
+
+#custom-power {
+  color: #ffffff;
+  background-color: #f38ba8;
+  padding: 0px 10px;
+  margin-left: 5px;
+  font-size: 18px;
+  border-radius: 2px;
+}

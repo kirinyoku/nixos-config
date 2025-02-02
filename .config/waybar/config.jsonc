@@ -1,0 +1,93 @@
+{
+  // STYLES
+  "position": "top",
+  "height": 20,
+  // LEFT
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  // RIGHT
+  "modules-right": [
+    "tray",
+    "clock",
+    "pulseaudio",
+    "backlight",
+    "battery",
+    "hyprland/language",
+    "custom/power"
+  ],
+  // MODULES
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "disable-scroll": true,
+    "all-outputs": true,
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    },
+    "format-icons": {
+      "1": "main",
+      "2": "web",
+      "3": "telegram",
+      "4": "spotify",
+      "5": "discord"
+    }
+  },
+  "hyprland/language": {
+    "format": "  {}",
+    "min-length": 5,
+    "format-uk": "ua",
+    "format-en": "en"
+  },
+  "clock": {
+    "format": "{:%a %d %b %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}"
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-full": "󱈑 {capacity}%",
+    "format-icons": ["󱊡", "󱊢", "󱊣"]
+
+	},
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": "󰖁 Muted",
+    "format-icons": {
+        "headphone": "",
+        "default": ["","","", "", ""]
+    },
+    "tooltip": false
+  },
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": ["",""],
+    "device": "apple-panel-bl",
+    "on-click": "backlightctl --auto",
+    "on-scroll-up": "backlightctl --set +5%",
+    "on-scroll-down": "backlightctl --set -5%",
+    "scroll-step": "5.0",
+    "smooth-scrolling-threshold": "2.0"
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "custom/power": {
+    "format": "{icon}",
+    "format-icons": "󰐥",
+    "on-click": "~/.config/rofi/powermenu/type-4/powermenu.sh",
+    "escape": true,
+    "tooltip": false
+  }
+}
