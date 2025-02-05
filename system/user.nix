@@ -9,7 +9,7 @@
     users.kirin = {
       isNormalUser = true;
       description = "Oleksandr";
-      extraGroups = [ "networkmanager" "wheel" ];
+      extraGroups = [ "networkmanager" "wheel" "docker" ];
       packages = with pkgs; [];
     };
   };

@@ -9,4 +9,6 @@
     gcc
     rustup
   ];
+
+  virtualisation.docker.enable = true;
 }
