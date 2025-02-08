@@ -1,5 +1,7 @@
 # My NixOS Config
 
+![hyfetch](./assets/virgin-arch-vs-chad-nixos.png)
+
 - Display Manager: [SDDM](https://github.com/sddm/sddm) ([sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme))
 - Wayland Compositor: [Hyprland](https://hyprland.org)
 - Wayland Bar: [Waybar](https://github.com/Alexays/Waybar)
@@ -24,4 +26,5 @@
 ![discord](./assets/discord.png)
 ## Neovim
 ![neovim](./assets/neovim.png)
+
 ![neovim_2](./assets/neovim_2.png)
